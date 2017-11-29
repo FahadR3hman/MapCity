@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import MapKit
+
+class DroppablePin : NSObject , MKAnnotation {
+  dynamic  var coordinate: CLLocationCoordinate2D
+    var identifier : String
+    
+     init(coordiante : CLLocationCoordinate2D , identifier : String) {
+        self.coordinate = coordiante
+        self.identifier = identifier
+        super.init()
+    }
+    
+    
+}
